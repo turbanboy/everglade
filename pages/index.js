@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { useAuth } from '@/lib/auth'
+
 import { Button, Heading, Text, Code, Icon, Flex } from '@chakra-ui/core';
+
 
 
 
@@ -9,6 +11,8 @@ export default function Home() {
   const auth = useAuth();
 
   return (
+
+
 
       <Flex
       as="main" 
@@ -39,6 +43,7 @@ export default function Home() {
           onClick = {(e) => auth.signinWithGithub()}>
              Sign In
           </Button> 
+
         )}
 
 

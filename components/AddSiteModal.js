@@ -1,5 +1,7 @@
+
 import { useForm } from 'react-hook-form';
 import { mutate } from 'swr';
+
 import {
   Modal,
   ModalOverlay,
@@ -12,11 +14,14 @@ import {
   FormLabel,
   Button,
   Input,
+
   useToast,
+
   useDisclosure
 } from '@chakra-ui/core';
 
 import { createSite } from '@/lib/db';
+
 import { useAuth } from '@/lib/auth';
 
 const AddSiteModal = ({ children }) => {
@@ -48,11 +53,13 @@ const AddSiteModal = ({ children }) => {
       },
       false
     );
+
     onClose();
   };
 
   return (
     <>
+
       <Button
         onClick={onOpen}
         backgroundColor="gray.900"
@@ -67,6 +74,7 @@ const AddSiteModal = ({ children }) => {
         {children}
       </Button>
       <Modal isOpen={isOpen} onClose={onClose}>
+
         <ModalOverlay />
         <ModalContent as="form" onSubmit={handleSubmit(onCreateSite)}>
           <ModalHeader fontWeight="bold">Add Site</ModalHeader>
@@ -75,8 +83,10 @@ const AddSiteModal = ({ children }) => {
             <FormControl>
               <FormLabel>Name</FormLabel>
               <Input
+
                 placeholder="My site"
                 name="name"
+
                 ref={register({
                   required: 'Required'
                 })}

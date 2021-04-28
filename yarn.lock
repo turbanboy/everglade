@@ -2,6 +2,7 @@
 # yarn lockfile v1
 
 
+
 "@ampproject/toolbox-core@^2.6.0", "@ampproject/toolbox-core@2.7.4":
   "integrity" "sha512-qpBhcS4urB7IKc+jx2kksN7BuvvwCo7Y3IstapWo+EW+COY5EYAUwb2pil37v3TsaqHKgX//NloFP1SKzGZAnw=="
   "resolved" "https://registry.npmjs.org/@ampproject/toolbox-core/-/toolbox-core-2.7.4.tgz"

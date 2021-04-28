@@ -11,7 +11,6 @@ const theme = {
     normal: 400,
     medium: 600,
     bold: 700
-
   },
   icons: {
     ...chakraTheme.icons,
@@ -21,7 +20,6 @@ const theme = {
       ),
       viewBox: '0 0 384.06 287.92'
     }
-
   }
 };
 

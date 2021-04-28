@@ -1,4 +1,3 @@
-
 import useSWR from 'swr';
 
 import DashboardShell from '@/components/DashboardShell';
@@ -25,7 +24,6 @@ const Dashboard = () => {
       {data.sites ? <SiteTable sites={data.sites} /> : <EmptyState />}
     </DashboardShell>
   );
-
 };
 
 export default Dashboard;

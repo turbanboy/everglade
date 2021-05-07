@@ -1,8 +1,8 @@
-import { AuthProvider } from '@/lib/auth'
+import { ThemeProvider, CSSReset } from '@chakra-ui/core';
 import { Global, css } from '@emotion/core';
 
+import { AuthProvider } from '@/lib/auth';
 import customTheme from '@/styles/theme';
-import { CSSReset, ThemeProvider } from '@chakra-ui/core';
 
 const GlobalStyle = ({ children }) => {
   return (
@@ -26,17 +26,15 @@ const GlobalStyle = ({ children }) => {
   );
 };
 
-
-
-function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
-  <ThemeProvider theme ={customTheme}>
-    <AuthProvider>
-      <CSSReset />
-      <Component {...pageProps}/>
-    </AuthProvider>
-  </ThemeProvider>
+    <ThemeProvider theme={customTheme}>
+      <AuthProvider>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </AuthProvider>
+    </ThemeProvider>
   );
-}
+};
 
-export default App
+export default App;

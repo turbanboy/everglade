@@ -7,7 +7,7 @@ export default function FeedbackLink({ siteId }) {
         Leave a comment →
       </Link>
       <Link fontSize="xs" color="blackAlpha.500" href="/">
-        Powered by Everglade OS
+        Powered by Everglade
       </Link>
     </Flex>
   );

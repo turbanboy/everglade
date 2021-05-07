@@ -19,16 +19,16 @@ const SkeletonRow = ({ width }) => (
   </Box>
 );
 
-const SiteTableSkeleton = () => {
+const FeedbackTableSkeleton = () => {
   return (
     <Table>
       <thead>
         <Tr>
           <Th>Name</Th>
-          <Th>Site Link</Th>
-          <Th>Feedback Link</Th>
-          <Th>Date Added</Th>
-          <Th>{''}</Th>
+          <Th>Feedback</Th>
+          <Th>Route</Th>
+          <Th>Visible</Th>
+          <Th width="50px">{''}</Th>
         </Tr>
       </thead>
       <tbody>
@@ -42,4 +42,4 @@ const SiteTableSkeleton = () => {
   );
 };
 
-export default SiteTableSkeleton;
+export default FeedbackTableSkeleton;

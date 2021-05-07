@@ -27,7 +27,9 @@ const SiteTable = ({ sites }) => {
             </Td>
             <Td>
               <NextLink href="/p/[siteId]" as={`/p/${site.id}`} passHref>
-                <Link>View Comments</Link>
+                <Link color="blue.500" fontWeight="medium">
+                  View Comment
+                </Link>
               </NextLink>
             </Td>
             <Td>{format(parseISO(site.createdAt), 'PPpp')}</Td>

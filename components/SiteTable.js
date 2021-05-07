@@ -3,7 +3,6 @@ import { Box, Link } from '@chakra-ui/core';
 import { Table, Tr, Th, Td } from './Table';
 import { parseISO, format } from 'date-fns';
 import NextLink from 'next/link';
-
 const SiteTable = ({ sites }) => {
   return (
     <Table>

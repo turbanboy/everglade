@@ -27,21 +27,15 @@ const Home = () => {
             `
             }}
           />
-          <title>Fast Feedback</title>
+          <title>Everglade</title>
         </Head>
         <Icon color="black" name="logo" size="64px" mb={2} />
         <Text mb={4} fontSize="lg" p={6}>
           <Text as="span" fontWeight="bold" display="inline">
-            Fast Feedback
+            Everglade
           </Text>
-          {' is being built as part of '}
-          <Link
-            href="https://react2025.com"
-            isExternal
-            textDecoration="underline"
-          >
-            React 2025
-          </Link>
+          {' is being built by Harsimran Singh'}
+    
           {`. It's the easiest way to add comments to your email newsletter. It's still a work-in-progress, but you can try it out by logging in.`}
         </Text>
         {auth.user ? (

@@ -5,5 +5,6 @@ export default async (url, token) => {
     credentials: 'same-origin'
   });
 
+  //console.log(res.json());
   return res.json();
 };
